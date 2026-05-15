@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, Music, ChevronDown } from "lucide-react";
-import { content } from "@/config/wedding";
+import { weddingData, content } from "@/config/wedding";
 
 interface IntroScreenProps {
   onOpen: () => void;
@@ -110,13 +110,13 @@ export default function IntroScreen({ onOpen, lang }: IntroScreenProps) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.8 }}
                 >
-                  Muhammadali
+                  {weddingData.groom}
                   <br />
                   <span className="text-gold-light/60 text-lg font-serif">
                     &amp;
                   </span>
                   <br />
-                  Madinaxon
+                  {weddingData.bride}
                 </motion.h1>
 
                 <motion.div

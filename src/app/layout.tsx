@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   title: "Firdavsbek & Nozima | To'y Taklifnomasi",
   description:
     "Sizni Firdavsbek va Nozimaning to'y marosimiga taklif qilamiz. 10.06.2026, Chust shahri.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Firdavsbek & Nozima | To'y Taklifnomasi",
     description: "Bizning eng baxtli kunimizga marhamat! 10.06.2026",
