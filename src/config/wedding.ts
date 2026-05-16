@@ -29,9 +29,9 @@ export interface Content {
 export const weddingData = {
   groom: "Firdavsbek",
   bride: "Nozima",
-  date: "2026-06-10T19:00:00",
+  date: "2026-06-10T17:00:00",
   displayDate: "10 | 06 | 2026",
-  time: "19:00",
+  time: "17:00",
   venueName: "Parizod To'yxonasi",
   city: "Chust shahri",
   address: "Mo'ljal: Chust shahri, Parizod to'yxonasi",

@@ -173,7 +173,7 @@ export default function DateCalendar({ lang }: DateCalendarProps) {
               <p className="font-script text-2xl md:text-3xl text-navy">
                 {weddingData.displayDate}
               </p>
-              <p className="font-body text-navy/60 text-sm mt-1">
+              <p className="font-script text-xl md:text-2xl text-navy/80 mt-1">
                 {weddingData.time}
               </p>
             </div>
