@@ -26,7 +26,10 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
+const siteUrl = "https://taklifnoma-firdavsbek-nozima.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Firdavsbek & Nozima | To'y Taklifnomasi",
   description:
     "Sizni Firdavsbek va Nozimaning to'y marosimiga taklif qilamiz. 10.06.2026, Chust shahri.",
@@ -36,7 +39,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Firdavsbek & Nozima | To'y Taklifnomasi",
     description: "Bizning eng baxtli kunimizga marhamat! 10.06.2026",
+    url: siteUrl,
+    siteName: "Firdavsbek & Nozima",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Firdavsbek va Nozima to'y taklifnomasi",
+      },
+    ],
+    locale: "uz_UZ",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Firdavsbek & Nozima | To'y Taklifnomasi",
+    description: "Bizning eng baxtli kunimizga marhamat! 10.06.2026",
+    images: ["/og-image.jpg"],
   },
 };
 
