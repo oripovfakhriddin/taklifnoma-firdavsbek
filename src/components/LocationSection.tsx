@@ -80,7 +80,7 @@ export default function LocationSection({ lang }: LocationSectionProps) {
               </motion.p>
 
               <motion.p
-                className="font-body text-navy/50 text-center text-sm mb-8 max-w-md mx-auto"
+                className="font-body text-navy/50 text-center text-sm mb-6 max-w-md mx-auto"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -88,6 +88,21 @@ export default function LocationSection({ lang }: LocationSectionProps) {
               >
                 {weddingData.address}
               </motion.p>
+
+              <motion.div
+                className="mb-6 rounded-xl overflow-hidden"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.55 }}
+              >
+                <img
+                  src="/images/venue.jpg"
+                  alt={weddingData.venueName}
+                  className="w-full h-48 md:h-56 object-cover rounded-xl"
+                  style={{ border: "1px solid rgba(201,168,76,0.2)" }}
+                />
+              </motion.div>
 
               <motion.div
                 className="flex flex-col sm:flex-row gap-3 justify-center"
